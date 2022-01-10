@@ -11,10 +11,10 @@ export default function HotelCard(props: IProps) {
 	return (
 		<div className="HotelCard">
 			<img src={`https://picsum.photos/300/150?random=${i}`}></img>
-			<span>{name}</span>
-			<span>{price}</span>
-			<span>{city}</span>
-			<span>{available_on}</span>
+			<span className="name">{name}</span>
+			<span className="city">{city}</span>
+			<span className="price">{price} AED</span>
+
 		</div>
 	);
 }

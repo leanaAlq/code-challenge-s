@@ -13,11 +13,26 @@
 .hotelsList {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 3em;
+	.hotels{
+		display: flex;
+.actions{
+	flex: 1
+}
+.list-container{
+	flex: 4;
+}
+	}
 	.hotelsContainer {
 		display: flex;
-		// justify-content: space-evenly;
+		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
 	}
+	.header{
+		display: flex;
+		justify-content: space-between;
+	}
+
 }
