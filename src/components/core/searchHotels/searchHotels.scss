@@ -1,3 +1,15 @@
+// colors:
+// Wedgewood
+// #4A6F9E
+
+// Mischka
+// #DBDBE4
+
+// Perano
+// #A4C4F0
+
+// Ebony Clay
+// #202A39
 .SearchHotels {
 	width: 100vw;
 	height: 100vh;
@@ -5,72 +17,74 @@
 	align-items: center;
 	justify-content: center;
 	gap: 1em;
-
-	.background{
-		background-image: url(https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80);
-        background-size: contain;	
-         background-repeat: no-repeat;	
+	background: url(https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2400&q=80);
+	gap: 1em;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.background {
+		background-color: #dbdbe470;
 		width: 900px;
 		height: 600px;
 		position: absolute;
 		border-radius: 20px;
-		filter: blur(1px);
+		backdrop-filter: blur(6px);
 	}
 	.searchBtn {
 		padding: 1em;
 		border-color: rgba(0, 0, 0, 0.23);
-		color: black;
+		color: #202A39;
+		&:hover {
+			color: #4A6F9E;
+		}
 	}
 }
+
 .hotelsList {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	padding: 3em;
-	.hotels{
+	min-height: 100vh;
+	.hotels {
 		display: flex;
-.actions{
-	flex: 1;
-	display: flex;
-    flex-direction: column;
-    align-items: center;
+		.actions {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
 
-	.MuiSlider-root{
-		width: 15em;
-		color: teal;
-	}
-	.price-range{
-		padding: 2em;
-		text-align: start;
-
-
-	}
-}
-.list-container{
-	flex: 4;
-}
+			.MuiSlider-root {
+				width: 15em;
+				color: #4A6F9E;
+			}
+			.price-range {
+				padding: 2em;
+				text-align: start;
+			}
+		}
+		.list-container {
+			flex: 4;
+		}
 	}
 	.hotelsContainer {
 		display: flex;
-		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
 	}
-	.header{
+	.header {
 		display: flex;
 		justify-content: space-between;
-        align-items: center;
-		span{
+		align-items: center;
+		span {
 			padding: 1em;
-    background: teal;
-	border-radius: 0.5em;
-	margin-right: 0.5em;
-&.label{
-	font-weight: bold;
-	background-color: transparent;
-	color: teal;
-}
+			background: #4A6F9E;
+			border-radius: 0.5em;
+			margin-right: 0.5em;
+			&.label {
+				font-weight: bold;
+				background-color: transparent;
+				color: #4A6F9E;
+			}
 		}
 	}
-
 }
