@@ -10,3 +10,14 @@
 		margin-left: 1em;
 	}
 }
+.hotelsList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	.hotelsContainer {
+		display: flex;
+		// justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
