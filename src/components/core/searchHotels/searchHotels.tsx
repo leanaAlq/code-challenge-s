@@ -52,19 +52,22 @@ const SearchHotels = () => {
 				<div className="hotels">
 					<div className="actions">
 						<SearchInput onChange={() => { }} />
-						<span>Price Range</span>
-						<Slider
-							size="small"
-							defaultValue={1000}
-							aria-label="Small"
-							valueLabelDisplay="auto"
-							min={100}
-							max={1000}
-						/>
+						<div className="price-range">
+							<span>Price Range</span>
+							<Slider
+								size="small"
+								defaultValue={1000}
+								aria-label="Small"
+								valueLabelDisplay="auto"
+								min={100}
+								max={1000}
+							/>
+						</div>
+
 					</div>
 					<div className="list-container">
 						<div className="header">
-							<span>Total Nights: {diff}</span>
+							<span className="label">Total Nights: {diff}</span>
 							<div>
 								<span>sort by name</span>
 								<span>sort by price</span>
@@ -83,6 +86,7 @@ const SearchHotels = () => {
 		</div>
 	) : (
 			<div className="SearchHotels">
+				<div className="background"></div>
 				<DateInput label="from" value={from} onChange={onFromChange} />
 				<DateInput label="to" value={to} onChange={onToChange} />
 				<Button className="searchBtn" onClick={getHotels} variant="outlined">

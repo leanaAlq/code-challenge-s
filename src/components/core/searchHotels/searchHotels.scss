@@ -4,10 +4,22 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	gap: 1em;
 
+	.background{
+		background-image: url(https://images.unsplash.com/photo-1498503182468-3b51cbb6cb24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=900&q=80);
+        background-size: contain;	
+         background-repeat: no-repeat;	
+		width: 900px;
+		height: 600px;
+		position: absolute;
+		border-radius: 20px;
+		filter: blur(1px);
+	}
 	.searchBtn {
 		padding: 1em;
-		margin-left: 1em;
+		border-color: rgba(0, 0, 0, 0.23);
+		color: black;
 	}
 }
 .hotelsList {
@@ -18,7 +30,21 @@
 	.hotels{
 		display: flex;
 .actions{
-	flex: 1
+	flex: 1;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+
+	.MuiSlider-root{
+		width: 15em;
+		color: teal;
+	}
+	.price-range{
+		padding: 2em;
+		text-align: start;
+
+
+	}
 }
 .list-container{
 	flex: 4;
@@ -26,13 +52,25 @@
 	}
 	.hotelsContainer {
 		display: flex;
-		justify-content: space-between;
+		justify-content: space-around;
 		align-items: center;
 		flex-wrap: wrap;
 	}
 	.header{
 		display: flex;
 		justify-content: space-between;
+        align-items: center;
+		span{
+			padding: 1em;
+    background: teal;
+	border-radius: 0.5em;
+	margin-right: 0.5em;
+&.label{
+	font-weight: bold;
+	background-color: transparent;
+	color: teal;
+}
+		}
 	}
 
 }
