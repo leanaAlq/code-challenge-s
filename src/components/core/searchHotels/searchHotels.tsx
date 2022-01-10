@@ -82,7 +82,7 @@ const SearchHotels = () => {
 						</div>
 						<div className="hotelsContainer">
 							{hotels.map((hotel: any, i: number) => (
-								<HotelCard hotel={hotel} i={i} />
+								<HotelCard hotel={hotel} i={i} nights={diff}/>
 							))}
 						</div>
 					</div>

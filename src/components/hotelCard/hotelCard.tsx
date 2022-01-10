@@ -3,9 +3,10 @@ import "./hotelCard.scss";
 interface IProps {
 	hotel: any;
 	i: number;
+	nights: number;
 }
 export default function HotelCard(props: IProps) {
-	const { hotel, i } = props;
+	const { hotel, i, nights } = props;
 	const { name, price, city, available_on } = hotel;
 
 	return (
@@ -13,8 +14,7 @@ export default function HotelCard(props: IProps) {
 			<img src={`https://picsum.photos/300/150?random=${i}`}></img>
 			<span className="name">{name}</span>
 			<span className="city">{city}</span>
-			<span className="price">{price} AED</span>
-
+			<span className="price">{price * nights} AED</span>
 		</div>
 	);
 }
